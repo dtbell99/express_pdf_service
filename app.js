@@ -15,8 +15,6 @@ app.use(bodyParser.text());
 
 app.post("/pdf", (request, response) => {
   var html = request.body
-  console.log("request.body:" + request.body)
-
   var config = {
     "border": {
       "top": ".5in",
